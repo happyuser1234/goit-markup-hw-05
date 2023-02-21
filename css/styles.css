@@ -630,21 +630,16 @@ body {
 }
 
 /*a для карточки*/
-
-.portfolio-list {
-  display: block;
+.portfolio-link {
   text-decoration: none;
-
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .portrfolio-thumb {
   position: relative;
 }
 
 /*оverlay,который появляется снизу img*/
-.portfolio-thumb::before {
-  content: '';
-  display: block;
+.portfolio-overlay {
   top: 0;
   left: 0;
   width: 100%;
@@ -655,10 +650,9 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   position: absolute;
-  overflow: hidden;
 }
 
-.portfolio-thumb:hover::before {
+.portfolio-overlay:hover {
   transform: translateY(0);
   background-color: var(--background-color-4);
 }
