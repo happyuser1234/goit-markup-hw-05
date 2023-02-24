@@ -20,6 +20,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+  <script src="./js/modal.js"></script>
   <body>
     <!--------------HEADER---------------------------------------------------------->
     <header class="header">
@@ -64,11 +65,13 @@
       <section class="hero section overlay">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn">Order Service</button>
-          <div class="backdrop is-hidden">
+          <button type="button" class="hero-btn" data-modal-open>
+            Order Service
+          </button>
+          <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <a class="hero-svg" href="#">
-                <svg width="8" hight="8">
+              <a class="hero-svg" href="#" data-modal-close>
+                <svg width="8" height="8">
                   <use href="./images/sprite.svg#icon-close-black"></use>
                 </svg>
               </a>
